@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adewuyi Peter | Construction Cost Management</title>
+  <meta name="description" content="Academic portfolio of Adewuyi Peter — Construction Cost Management, Smart Cities, Sustainable Infrastructure, Urban Data Systems.">
+  <meta name="keywords" content="Construction Cost Management, Smart Cities, Sustainable Infrastructure, Urban Data Systems, Nigeria, Scholarship, Graduate School">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="logo" href="index.html">AP</a>
+      <nav class="nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="name">Adewuyi Peter</h1>
+        <p class="headline">Construction Cost Management | Smart Cities | Sustainable Infrastructure</p>
+        <p class="bio">
+          I am focused on the economics and delivery of resilient infrastructure in developing regions. 
+          My interests lie at the intersection of construction cost management, urban data systems, and sustainable city development.
+        </p>
+        <div class="cta-group">
+          <a class="btn primary" href="documents/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="skills.html">Research Interests</a>
+          <a class="btn" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <section class="highlights">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Academic Focus</h3>
+          <p>Infrastructure economics, cost control, and data-driven urban planning.</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p>Python, Excel, Pandas, cost estimation frameworks, project budgeting.</p>
+        </div>
+        <div class="card">
+          <h3>Impact</h3>
+          <p>Supporting equitable, efficient, and sustainable urban development.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>&copy; <span id="year"></span> Adewuyi Peter. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="documents/cv.pdf" target="_blank" rel="noopener">CV</a> ·
+        <a href="documents/sop.pdf" target="_blank" rel="noopener">Statement of Purpose</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Optional small JS for year (no dependency, safe for GitHub Pages) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
