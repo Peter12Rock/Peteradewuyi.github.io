@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awards | Adewuyi Peter</title>
+  <meta name="description" content="Awards and achievements of Adewuyi Peter — scholarships, academic awards, and recognitions.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="logo" href="index.html">AP</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a class="active" href="awards.html">Awards</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Awards Content -->
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Awards & Achievements</h1>
+        <p>Scholarships, academic awards, and recognitions.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container narrow">
+        <ul class="timeline">
+          <li>
+            <span class="time">[Year]</span>
+            <div class="detail">
+              <strong>[Scholarship Name]</strong> — Awarded for academic excellence in construction cost management.
+            </div>
+          </li>
+          <li>
+            <span class="time">[Year]</span>
+            <div class="detail">
+              <strong>[Academic Award]</strong> — Recognition for outstanding project on infrastructure economics.
+            </div>
+          </li>
+          <li>
+            <span class="time">[Year]</span>
+            <div class="detail">
+              <strong>[Conference/Competition]</strong> — Presented research on smart city data systems.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>&copy; <span id="year"></span> Adewuyi Peter. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="documents/cv.pdf" target="_blank" rel="noopener">CV</a> ·
+        <a href="documents/sop.pdf" target="_blank" rel="noopener">Statement of Purpose</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
