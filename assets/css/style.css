@@ -1,0 +1,316 @@
+/* 
+  Global Styles for Adewuyi Peter — Academic Portfolio
+  - Neutral palette: navy (#0f2a44), gray (#6b7280), white (#ffffff)
+  - Sans-serif typography
+  - Mobile-first, responsive grid
+*/
+
+/* CSS Reset (minimal) */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+
+/* Typography & Colors */
+:root {
+  --navy: #0f2a44;
+  --navy-700: #123456; /* subtle variant */
+  --gray: #6b7280;
+  --light-gray: #f3f4f6;
+  --white: #ffffff;
+  --accent: #1f6feb; /* accessible blue for links/buttons */
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  border: 2px solid var(--navy);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--navy);
+  padding: 0.5rem 0.7rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background: var(--light-gray);
+}
+
+.nav a.active {
+  color: var(--white);
+  background: var(--navy);
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 0 2rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.name {
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem;
+}
+
+.headline {
+  color: var(--gray);
+  margin: 0 0 1rem;
+}
+
+.bio {
+  max-width: 700px;
+  margin-bottom: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  text-decoration: none;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--light-gray);
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+}
+
+.btn.primary:hover {
+  background: #1a5fd1;
+  border-color: #1a5fd1;
+}
+
+/* Page Hero */
+.page-hero {
+  padding: 2rem 0 1rem;
+  background: var(--white);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.page-hero h1 {
+  margin: 0 0 0.3rem;
+}
+
+.page-hero p {
+  color: var(--gray);
+  margin: 0;
+}
+
+/* Content Sections */
+.content {
+  padding: 2rem 0;
+}
+
+.narrow {
+  max-width: 800px;
+}
+
+/* Cards & Grids */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--white);
+}
+
+.highlights {
+  padding: 2rem 0;
+}
+
+/* Project Cards */
+.project-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--white);
+}
+
+/* Lists */
+.list {
+  padding-left: 1rem;
+}
+
+.list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Timeline (Awards) */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 3px solid #e5e7eb;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0.6rem 0 0.6rem 1rem;
+  margin-left: 0.5rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 1rem;
+  width: 10px;
+  height: 10px;
+  background: var(--navy);
+  border-radius: 50%;
+}
+
+.timeline .time {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--navy);
+  margin-right: 0.5rem;
+}
+
+.timeline .detail {
+  color: var(--gray);
+}
+
+/* Gallery */
+.gallery-grid {
+  margin-top: 1rem;
+}
+
+.gallery-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.8rem;
+  background: var(--white);
+}
+
+.placeholder-img {
+  background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
+  color: var(--gray);
+  height: 140px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.6rem;
+}
+
+.note {
+  color: var(--gray);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  background: var(--white);
+  padding: 1rem 0;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .header-flex { flex-direction: column; gap: 0.6rem; }
+  .nav ul { flex-wrap: wrap; justify-content: center; }
+  .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .footer-flex { flex-direction: column; gap: 0.4rem; }
+}
